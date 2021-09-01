@@ -1,0 +1,228 @@
+
+
+@import 'numeros';
+
+.grid { 
+    div {
+        float: left;
+    }
+}
+
+.grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.grid{
+    .col-1{
+    width: $uno;
+    }
+}
+
+.grid { 
+    .col-2{
+    width: $dos;
+    }
+}
+
+.grid { 
+    .col-3{
+    width: $tres;
+    }
+}
+
+.grid{  
+    .col-4{
+    width: $cuatro;
+    }
+}
+
+.grid{  
+    .col-6{
+    width: $seis;
+    }
+}
+.grid{  
+    .col-8{
+    width: $ocho;
+    }
+}
+
+.grid { 
+    .col-12{
+    width: $doce;
+    }
+}
+@mixin sm-screen{
+    @media screen and (min-width: 768px){    
+        @content;
+    }   
+}   
+@mixin md-screen{
+    @media screen and (min-width: 992px){    
+        @content;
+    }   
+}   
+@mixin lg-screen{
+    @media screen and (min-width: 1200px ){    
+        @content;
+    }   
+}   
+@mixin sm-color{
+    background: lightcyan;
+}
+@mixin md-color{
+    background-color: lightcoral;
+}
+@mixin lg-color{
+    background-color: lightgreen;
+}
+
+@include sm-screen{
+    .grid { 
+        .col-sm-1{
+            @include sm-color;
+            width: $uno;
+        }
+        }
+        
+    .grid {
+        .col-sm-2{
+            @include sm-color;
+            width: $dos;
+        }
+    }
+    
+    .grid { 
+        .col-sm-3{
+            @include sm-color;
+            width: $tres;
+        }
+    }
+    
+    .grid { 
+        .col-sm-4{
+            @include sm-color;
+            width: $cuatro;
+        }
+    }
+    
+    .grid{  
+        .col-sm-6{
+            @include sm-color;
+            width: $seis;
+        }
+    }
+    .grid{  
+        .col-sm-8{
+            @include sm-color;
+            width:  $ocho;
+        }
+    }
+    
+    .grid{ 
+        .col-sm-12{
+            @include sm-color;
+            width: $doce;
+        }
+    }
+}
+@include md-screen{
+    .grid { 
+        .col-md-1{
+            @include md-color();
+            width: $uno;
+        }
+        }
+        
+    .grid {
+        .col-md-2{
+            @include md-color();
+            width: $dos;
+        }
+    }
+    
+    .grid { 
+        .col-md-3{
+            @include md-color();
+            width: $tres;
+        }
+    }
+    
+    .grid { 
+        .col-md-4{
+            @include md-color();
+            width: $cuatro;
+        }
+    }
+    
+    .grid{  
+        .col-md-6{
+            @include md-color();
+            width: $seis;
+        }
+    }
+    .grid{  
+        .col-md-8{
+            @include md-color();
+            width:  $ocho;
+        }
+    }
+    
+    .grid{ 
+        .col-md-12{
+            @include md-color();
+            width: $doce;
+        }
+    }
+}
+@include lg-screen{
+    .grid { 
+        .col-lg-1{
+            @include lg-color;
+            width: $uno;
+        }
+        }
+        
+    .grid {
+        .col-lg-2{
+            @include lg-color;
+            width: $dos;
+        }
+    }
+    
+    .grid { 
+        .col-lg-3{
+            @include lg-color;
+            width: $tres;
+        }
+    }
+    
+    .grid { 
+        .col-lg-4{
+            @include lg-color;
+            width: $cuatro;
+        }
+    }
+    
+    .grid{  
+        .col-lg-6{
+            @include lg-color;
+            width: $seis;
+        }
+    }
+    .grid{  
+        .col-lg-8{
+            @include lg-color;
+            width: $ocho;
+        }
+    }
+    
+    .grid{ 
+        .col-lg-12{
+        @include lg-color;
+            width: $doce;
+        }
+    }
+}
+

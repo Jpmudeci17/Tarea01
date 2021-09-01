@@ -1,0 +1,146 @@
+.grid div {
+  float: left;
+}
+
+.grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid .col-1 {
+  width: calc(100%/12);
+}
+
+.grid .col-2 {
+  width: calc(100%/6);
+}
+
+.grid .col-3 {
+  width: calc(100%/4);
+}
+
+.grid .col-4 {
+  width: calc(100%/3);
+}
+
+.grid .col-6 {
+  width: calc(100%/2);
+}
+
+.grid .col-8 {
+  width: calc(100%/1.5);
+}
+
+.grid .col-12 {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .grid .col-sm-1 {
+    background: lightcyan;
+    width: calc(100%/12);
+  }
+
+  .grid .col-sm-2 {
+    background: lightcyan;
+    width: calc(100%/6);
+  }
+
+  .grid .col-sm-3 {
+    background: lightcyan;
+    width: calc(100%/4);
+  }
+
+  .grid .col-sm-4 {
+    background: lightcyan;
+    width: calc(100%/3);
+  }
+
+  .grid .col-sm-6 {
+    background: lightcyan;
+    width: calc(100%/2);
+  }
+
+  .grid .col-sm-8 {
+    background: lightcyan;
+    width: calc(100%/1.5);
+  }
+
+  .grid .col-sm-12 {
+    background: lightcyan;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid .col-md-1 {
+    background-color: lightcoral;
+    width: calc(100%/12);
+  }
+
+  .grid .col-md-2 {
+    background-color: lightcoral;
+    width: calc(100%/6);
+  }
+
+  .grid .col-md-3 {
+    background-color: lightcoral;
+    width: calc(100%/4);
+  }
+
+  .grid .col-md-4 {
+    background-color: lightcoral;
+    width: calc(100%/3);
+  }
+
+  .grid .col-md-6 {
+    background-color: lightcoral;
+    width: calc(100%/2);
+  }
+
+  .grid .col-md-8 {
+    background-color: lightcoral;
+    width: calc(100%/1.5);
+  }
+
+  .grid .col-md-12 {
+    background-color: lightcoral;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid .col-lg-1 {
+    background-color: lightgreen;
+    width: calc(100%/12);
+  }
+
+  .grid .col-lg-2 {
+    background-color: lightgreen;
+    width: calc(100%/6);
+  }
+
+  .grid .col-lg-3 {
+    background-color: lightgreen;
+    width: calc(100%/4);
+  }
+
+  .grid .col-lg-4 {
+    background-color: lightgreen;
+    width: calc(100%/3);
+  }
+
+  .grid .col-lg-6 {
+    background-color: lightgreen;
+    width: calc(100%/2);
+  }
+
+  .grid .col-lg-8 {
+    background-color: lightgreen;
+    width: calc(100%/1.5);
+  }
+
+  .grid .col-lg-12 {
+    background-color: lightgreen;
+    width: 100%;
+  }
+}
